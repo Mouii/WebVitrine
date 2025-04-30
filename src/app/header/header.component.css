@@ -1,0 +1,41 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    color: white;
+  }
+  
+  .header-logo {
+    width: 80px;
+    height: auto;
+  }
+  
+  .nav-bar {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    background-color: #356AA0; /* Softer blue */
+    border-radius: 8px;
+    justify-content: flex-end; /* Moves the nav bar to the right */
+    flex-grow: 1; /* Ensures it expands while pushing to the right */
+  }
+  
+  .nav-item {
+    text-decoration: none;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .nav-item:hover {
+    background-color: #4A89C4; /* Slightly brighter blue on hover */
+  }
+  
+  .divider {
+    width: 2px;
+    height: 70%;
+    background-color: rgba(255, 255, 255, 1); /* Soft white line */
+    align-self: center;
+  }
