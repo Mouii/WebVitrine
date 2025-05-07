@@ -8,7 +8,8 @@ import { Component } from '@angular/core';
 })
 
 export class FooterComponent {
-  year = new Date().getFullYear();
-  name = 'John Doe';
-  email = 'john.doe@example.com';
+  year : number = new Date().getFullYear();
+  name : String = 'Prud\'homme';
+  firstname : String  = 'Kévin';
+  email : String = 'kevin.prudhomme555@gmail.com';
 }

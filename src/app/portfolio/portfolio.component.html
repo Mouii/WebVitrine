@@ -1,1 +1,24 @@
-<p>portfolio works!</p>
+<h1>Loup-garou de Thiercelieux en Kotlin</h1>
+
+<button (click)="prevImage(kotlinWerewolfProject)">⬅ Prev</button>
+  
+  <img [src]="kotlinWerewolfProject.images[kotlinWerewolfProject.activeIndex]" alt="Carousel Image">
+  
+<button (click)="nextImage(kotlinWerewolfProject)">Next ➡</button>
+
+
+<h1>Loup-garou de Thiercelieux en Angular</h1>
+
+<button (click)="prevImage(angularWerewolfProject)">⬅ Prev</button>
+  
+  <img [src]="angularWerewolfProject.images[angularWerewolfProject.activeIndex]" alt="Carousel Image">
+  
+<button (click)="nextImage(angularWerewolfProject)">Next ➡</button>
+
+<h1>Tour d'Hanoï en QML</h1>
+
+<button (click)="prevImage(hanoiProject)">⬅ Prev</button>
+  
+  <img [src]="hanoiProject.images[hanoiProject.activeIndex]" alt="Carousel Image">
+  
+<button (click)="nextImage(hanoiProject)">Next ➡</button>

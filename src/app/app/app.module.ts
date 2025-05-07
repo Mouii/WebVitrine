@@ -4,7 +4,6 @@ import { AppComponent } from '../app.component';
 
 // Import your custom components
 import { HeaderComponent } from '../header/header.component';
-import { BodyComponent } from '../body/body.component';
 import { FooterComponent } from '../footer/footer.component';
 
 @NgModule({
@@ -12,7 +11,6 @@ import { FooterComponent } from '../footer/footer.component';
     BrowserModule,
     AppComponent,
     HeaderComponent,
-    BodyComponent,
     FooterComponent
   ],
   providers: [],
