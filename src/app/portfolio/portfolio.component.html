@@ -1,24 +1,46 @@
 <h1>Loup-garou de Thiercelieux en Kotlin</h1>
 
-<button (click)="prevImage(kotlinWerewolfProject)">⬅ Prev</button>
-  
-  <img [src]="kotlinWerewolfProject.images[kotlinWerewolfProject.activeIndex]" alt="Carousel Image">
-  
-<button (click)="nextImage(kotlinWerewolfProject)">Next ➡</button>
+<div class="imageList">
 
+  <img class="imageShowed" [src]="kotlinWerewolfProject.images[kotlinWerewolfProject.activeIndex]" alt="Carousel Image">
+  <br/>
+
+  <div class="imageButtons">
+    <button (click)="prevImage(kotlinWerewolfProject)">{{ prevString }}</button>
+    <button (click)="nextImage(kotlinWerewolfProject)">{{ nextString }}</button>
+  </div>
+</div>
+
+<p class="textBlock">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
 
 <h1>Loup-garou de Thiercelieux en Angular</h1>
+  
+<div class="imageList">
 
-<button (click)="prevImage(angularWerewolfProject)">⬅ Prev</button>
+  <img class="imageShowed" [src]="angularWerewolfProject.images[angularWerewolfProject.activeIndex]" alt="Carousel Image">
+  <br/>
+
+  <div class="imageButtons">
+    <button (click)="prevImage(angularWerewolfProject)">{{ prevString }}</button> 
+    <button (click)="nextImage(angularWerewolfProject)">{{ nextString }}</button>
+  </div>
   
-  <img [src]="angularWerewolfProject.images[angularWerewolfProject.activeIndex]" alt="Carousel Image">
-  
-<button (click)="nextImage(angularWerewolfProject)">Next ➡</button>
+</div>
+
+<p class="textBlock">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
 
 <h1>Tour d'Hanoï en QML</h1>
+  
+<div class="imageList">
 
-<button (click)="prevImage(hanoiProject)">⬅ Prev</button>
+  <img class="imageShowed" [src]="hanoiProject.images[hanoiProject.activeIndex]" alt="Carousel Image">
+  <br/>
+
+  <div class="imageButtons">
+    <button (click)="prevImage(hanoiProject)">{{ prevString }}</button>
+    <button (click)="nextImage(hanoiProject)">{{ nextString }}</button>
+  </div>
   
-  <img [src]="hanoiProject.images[hanoiProject.activeIndex]" alt="Carousel Image">
-  
-<button (click)="nextImage(hanoiProject)">Next ➡</button>
+</div>
+
+<p class="textBlock">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>

@@ -165,3 +165,12 @@
       margin-block: 1.5rem;
     }
   }
+
+  .textBlock {
+    width: 80%; /* Ensures the text isn’t too wide */
+    margin: 0 auto; /* ✅ Centers the block horizontally */
+    text-align: justify; /* ✅ Justifies the text */
+    font-size: 18px; /* Adjust for readability */
+    line-height: 1.6; /* Adds spacing between lines */
+    max-width: 800px; /* Prevents overly wide text */
+  }

@@ -14,19 +14,22 @@ interface ImageSet {
 export class PortfolioComponent {
 
   kotlinWerewolfProject : ImageSet = {
-    images : ["/assets/werewolf.webp"],
+    images : ["assets/werewolf.webp"],
     activeIndex : 0
   }
 
   angularWerewolfProject : ImageSet = {
-    images : ["/assets/simplevillager.webp"],
+    images : ["assets/simplevillager.webp"],
     activeIndex : 0
   }
 
   hanoiProject : ImageSet = {
-    images : ["/assets/manipulator.webp"],
+    images : ["assets/manipulator.webp"],
     activeIndex : 0
   }
+
+  prevString : String = "⬅ Prev";
+  nextString : String = "Next ➡"
 
   nextImage(actualImage: ImageSet) {
     actualImage.activeIndex = (actualImage.activeIndex + 1) % actualImage.images.length;

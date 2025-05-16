@@ -14,7 +14,9 @@ export class HeaderComponent {
   name = 'John Doe';
   tagline = 'Web Developer | Creative Thinker';
 
-  test() {
-    console.log("got it")
-  }
+  home = "Accueil";
+  about = "Parcours";
+  portfolio = "Projets";
+  contact = "Contact";
+
 }

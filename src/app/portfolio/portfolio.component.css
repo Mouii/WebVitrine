@@ -1,0 +1,23 @@
+.imageList {
+    display: flex;
+    place-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.imageShowed {
+    width: 50%;
+}
+
+.imageButtons {
+    display: grid;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    grid-template-columns: 1fr 1fr;
+    gap : 10px;
+}
+
+h1 {
+    margin : 0 auto;
+    text-align: center;
+}

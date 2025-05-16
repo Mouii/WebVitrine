@@ -1,12 +1,38 @@
-<p>Un peu d'histoire sur mon parcours académique serait intéressant non?</p>
+<div class="textBlock">
+    <p>{{ myselfString }}</p>
+    <br/>
 
-<p>J'ai commencé cependant mes études en informatique et faire de la programmation réellement pendant mon <b>DUT Informatique</b> à partir de 2012 à <u>Aix-en-Provence dans la région PACA</u>.<br/>
-Cette formation nous prépare normalement à être disponible sur le marché du travail en tant que technicien supérieur mais elle ne bloque en aucun cas la poursuite en étude supérieure.<br/>
-À travers cette formation riche en connaissances, et transmise par des enseignants-chercheurs, j'ai appris mes premières notions d'algorithmie avec les langages C++, Java, PHP, Javascript, PL/SQL 
-dans cet ordre. Beaucoup de travaux pratiques, des tests d'une forte sévérité, des mathématiques avancées, j'en suis ressorti avec une panoplie solide qui m'est toujours utile aujourd'hui.</p>
+    <img class="schoolImage" [src]="universityPath" alt="Carousel Image">
 
-<p>J'ai ensuite poursuivi mes études en école d'ingénieur à <b>l'ENSSAT (École Nationale Supérieure des Sciences Appliquées et de Technologies)</b> à partir de 2014 <u>en Bretagne à Lannion</u>.<br/>
-Cette poursuite de formation m'a permi d'acquérir des connaissances sur plusieurs domaines en émergence comme l'intelligence artificielle, le traitement du langage et de la parole.
-J'ai également pu solidifier mes compétences en ayant une meilleure conception d'application à travers des design patterns, le multithreading; mais aussi un solide bagage théorique 
-sur les mathématiques plus poussées; notions théoriques vu par mes compagnons élèves de classes préparatoires.</p>
+    <p [innerHTML]="dutString"></p>
+    <br/>
 
+    <img class="schoolImage" [src]="engineerPath" alt="Carousel Image">
+
+    <p [innerHTML]="engineerString"></p>
+    
+    <img class="schoolImage" [src]="sopraPath" alt="Carousel Image">
+
+    <p [innerHTML]="sopraString"></p>
+
+    <img class="schoolImage" [src]="defensePath" alt="Carousel Image">
+
+    <p [innerHTML]="defenseString"></p>
+
+    <img class="schoolImage" [src]="covidPath" alt="Carousel Image">
+
+    <p [innerHTML]="covidString"></p>
+
+    <img class="schoolImage" [src]="portugalPath" alt="Carousel Image">
+
+    <p [innerHTML]="portugalString"></p>
+
+    <img class="schoolImage" [src]="atheaPath" alt="Carousel Image">
+
+    <p [innerHTML]="atheaString"></p>
+
+    <img class="schoolImage" [src]="bontazPath" alt="Carousel Image">
+
+    <p [innerHTML]="bontazString"></p>
+
+</div>
