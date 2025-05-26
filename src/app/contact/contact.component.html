@@ -1,1 +1,4 @@
-<p>contact works!</p>
+<div [@openClose]="isOpen ? 'open' : 'closed'" class="toggle-container">
+  This is a toggleable element.
+</div>
+<button (click)="toggle()">Toggle</button>

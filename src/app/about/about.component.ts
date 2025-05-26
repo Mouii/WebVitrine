@@ -1,12 +1,41 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { fadeInUpAnimation, slideInAnimation } from '../app/AnimationService';
+
+export enum EnumStory {
+    UNIVERSITY = "university",
+    ENGINEER = "engineer",
+    SOPRA = "sopra",
+    DEFENSE = "defense",
+    COVID = "covid",
+    PORTUGAL = "portugal",
+    ATHEA = "athea",
+    BONTAZ = "bontaz"
+};
+
 
 @Component({
   selector: 'app-about',
   templateUrl: './about.component.html',
   styleUrl: './about.component.css',
-  standalone: true
+  standalone: true,
+  imports: [CommonModule],
+  animations: [fadeInUpAnimation, slideInAnimation]
 })
 export class AboutComponent {
+
+  EnumStory = EnumStory;
+
+  idBoolMap : Map<EnumStory, Boolean> = new Map<EnumStory, Boolean>([
+    [EnumStory.UNIVERSITY, false],
+    [EnumStory.ENGINEER, false],
+    [EnumStory.SOPRA, false],
+    [EnumStory.DEFENSE, false],
+    [EnumStory.COVID, false],
+    [EnumStory.PORTUGAL, false],
+    [EnumStory.ATHEA, false],
+    [EnumStory.BONTAZ, false]
+  ]);
 
   universityPath : String = "assets/university.webp";
 
@@ -155,4 +184,11 @@ export class AboutComponent {
   <b><u>Environnement :</u></b> Windows 11<br/>
   <b><u>Résultats :</u></b> Corrections de bugs, améliorations de l'application, utilisateurs assistés.`;
 
+
+  showAssociate(entry : EnumStory) {
+    if(this.idBoolMap.has(entry)) {
+      this.idBoolMap.set(entry, !this.idBoolMap.get(entry))
+    }
+    
+  }
 }

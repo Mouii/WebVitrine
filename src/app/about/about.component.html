@@ -1,38 +1,68 @@
 <div class="textBlock">
-    <p>{{ myselfString }}</p>
-    <br/>
+    <div class="animated-box"><p>{{ myselfString }}</p></div>
 
-    <img class="schoolImage" [src]="universityPath" alt="Carousel Image">
+    <a class="titleClick" (click)="showAssociate(EnumStory.UNIVERSITY)">DUT Informatique</a>
 
-    <p [innerHTML]="dutString"></p>
-    <br/>
+    <div [class.show]="idBoolMap.get(EnumStory.UNIVERSITY)" class="toggle-container">
+        <img class="schoolImage" [src]="universityPath" alt="Carousel Image">
+        <div class="freepikClass"><a href="http://www.freepik.com">Designed by starline / Freepik</a></div>
+        <p [innerHTML]="dutString"></p>
+    </div>
 
-    <img class="schoolImage" [src]="engineerPath" alt="Carousel Image">
+    <a class="titleClick" (click)="showAssociate(EnumStory.ENGINEER)">ENSSAT</a>
 
-    <p [innerHTML]="engineerString"></p>
+    <div [class.show]="idBoolMap.get(EnumStory.ENGINEER)" class="toggle-container" >
+        <img class="schoolImage" [src]="engineerPath" alt="Carousel Image">
+        <div class="freepikClass"><a href="http://www.freepik.com">Designed by starline / Freepik</a></div>
+        <p [innerHTML]="engineerString"></p>
+    </div>
+
+    <a class="titleClick" (click)="showAssociate(EnumStory.SOPRA)">Stage et contrat de professionnalisation à Sopra Stéria</a>
+
+    <div [class.show]="idBoolMap.get(EnumStory.SOPRA)" class="toggle-container" >
+        <img class="schoolImage" [src]="sopraPath" alt="Carousel Image">
+        <div class="freepikClass"><a href="http://www.freepik.com">Designed by starline / Freepik</a></div>
+        <p [innerHTML]="sopraString"></p>
+    </div>
+
+    <a class="titleClick" (click)="showAssociate(EnumStory.DEFENSE)">Safran, Thalès en tant que consultant AUSY</a>
+
+    <div [class.show]="idBoolMap.get(EnumStory.DEFENSE)" class="toggle-container" >
+        <img class="schoolImage" [src]="defensePath" alt="Carousel Image">
+        <div class="freepikClass"><a href="http://www.freepik.com">Designed by starline / Freepik</a></div>
+        <p [innerHTML]="defenseString"></p>
+    </div>
+
+    <a class="titleClick" (click)="showAssociate(EnumStory.COVID)">V.I.E loupé et Covid</a>
+
+    <div [class.show]="idBoolMap.get(EnumStory.COVID)" class="toggle-container" >
+        <img class="schoolImage" [src]="covidPath" alt="Carousel Image">
+        <div class="freepikClass"><a href="http://www.freepik.com">Designed by starline / Freepik</a></div>
+        <p [innerHTML]="covidString"></p>
+    </div>
+
+    <a class="titleClick" (click)="showAssociate(EnumStory.PORTUGAL)">Klx au Portugal, 2ème V.I.E</a>
+
+    <div [class.show]="idBoolMap.get(EnumStory.PORTUGAL)" class="toggle-container" >
+        <img class="schoolImage" [src]="portugalPath" alt="Carousel Image">
+        <div class="freepikClass"><a href="http://www.freepik.com">Designed by starline / Freepik</a></div>
+        <p [innerHTML]="portugalString"></p>
+    </div>
+
+    <a class="titleClick" (click)="showAssociate(EnumStory.ATHEA)">Athéa, Big Data, et le retour en France</a>
+
+    <div [class.show]="idBoolMap.get(EnumStory.ATHEA)" class="toggle-container" >
+        <img class="schoolImage" [src]="atheaPath" alt="Carousel Image">
+        <div class="freepikClass"><a href="http://www.freepik.com">Designed by starline / Freepik</a></div>
+        <p [innerHTML]="atheaString"></p>
+    </div>
     
-    <img class="schoolImage" [src]="sopraPath" alt="Carousel Image">
+    <a class="titleClick" (click)="showAssociate(EnumStory.BONTAZ)">Bontaz et les montagnes de la Haute-Savoie</a>
 
-    <p [innerHTML]="sopraString"></p>
-
-    <img class="schoolImage" [src]="defensePath" alt="Carousel Image">
-
-    <p [innerHTML]="defenseString"></p>
-
-    <img class="schoolImage" [src]="covidPath" alt="Carousel Image">
-
-    <p [innerHTML]="covidString"></p>
-
-    <img class="schoolImage" [src]="portugalPath" alt="Carousel Image">
-
-    <p [innerHTML]="portugalString"></p>
-
-    <img class="schoolImage" [src]="atheaPath" alt="Carousel Image">
-
-    <p [innerHTML]="atheaString"></p>
-
-    <img class="schoolImage" [src]="bontazPath" alt="Carousel Image">
-
-    <p [innerHTML]="bontazString"></p>
-
+    <div [class.show]="idBoolMap.get(EnumStory.BONTAZ)" class="toggle-container" >
+        <img class="schoolImage" [src]="bontazPath" alt="Carousel Image">
+        <div class="freepikClass"><a href="http://www.freepik.com">Designed by starline / Freepik</a></div>
+        <p [innerHTML]="bontazString"></p>
+    </div>
+   
 </div>

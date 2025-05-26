@@ -3,3 +3,48 @@
     margin : 0 auto;
     width: 50%;
 }
+
+.toggle-container {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+  margin : 10px 0px 0px 0px;
+}
+
+.toggle-container.show {
+  max-height: 1000px; /* Adjust based on content size */
+  margin : 10px 0px 10px 0px;
+}
+
+.titleClick {
+  text-decoration: none; /* ✅ Removes default underline */
+  border-bottom: 2px solid; /* ✅ Creates a custom underline */
+  padding-bottom: 2px; /* Adjust spacing */
+  font-size: 30px;
+}
+
+.titleClick:hover {
+  border-bottom: 2px solid gray; /* ✅ Changes color on hover */
+}
+
+.titleClick::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100vw; /* ✅ Extends across the viewport */
+  height: 3px;
+  bottom: -5px; /* Adjust distance from text */
+  margin-bottom: 20px;
+}
+
+.freepikClass {
+  text-align: center;
+  font-size: 10px;
+}
+
+.animated-box {
+  display: inline-block;
+  padding: 20px;
+  border-radius: 10px;
+  opacity: 1; /* ✅ Ensures animation starts hidden */
+}
